@@ -1,0 +1,143 @@
+@import "fonts"
+
+
+//----------------------fonts---------------------
+$fonts: 'SFProDisplay', sans-serif
+//---------------------end-fonts---------------------
+
+//----------------------color---------------------
+$accent: #e23030
+$text: #000
+
+//---------------------end-color---------------------
+
+body
+	overflow-x: hidden
+	position: relative
+	min-width: 320px
+	font-family: $fonts
+	font-size: 14px
+	color: $text
+	line-height: 1.4
+	font-weight: 400
+
+::selection
+	background-color: $accent
+	color: #fff
+
+a, div, ul, li, input, textarea
+	&:hover,
+	&:focus
+		outline: none
+
+section
+	overflow: hidden
+	
+h1, h2, h3, h4, h5, h6
+	font-weight: 700
+	line-height: 1.1
+	margin: 0
+	padding: 0
+		
+h2
+	font-size: 24px
+
+ul
+	margin: 0
+	padding: 0
+	list-style-type: none
+
+i
+	font-style: normal
+	font-size: 16px
+	color: #fff
+
+input, textarea
+	height: 55px
+	line-height: 55px
+	border-radius: 5px
+	border: 2px solid #DCE7FF
+	outline: none
+	box-shadow: none
+	-webkit-appearance: none
+	background-color: transparent
+	padding: 0 30px
+	width: 100%
+	
+	&:focus:required:invalid
+		border-color: $accent
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&:required:valid
+		border-color: green
+		outline: none
+		box-shadow: none
+		-webkit-appearance: none
+
+	&::placeholder
+		color: #A1AFCC
+		font-size: 19px
+		line-height: 55px
+
+select
+	height: 40px
+	border-radius: 5px
+	border: 1px solid #ffffff
+	width: 100%
+	padding: 0 15px
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+
+	&:hover,
+	&:focus
+		outline: none
+		border-color: #ededed
+
+
+option
+	padding: 0 15px
+	height: 20px
+
+
+b, strong
+	font-weight: 700
+
+p
+	margin: 0
+	padding: 0
+
+a,
+a:focus,
+a:hover
+	outline: none
+	text-decoration: none
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button 
+	-webkit-appearance: none
+	margin: 0
+
+
+input[type="number"]
+	-moz-appearance: textfield
+
+input[type="number"]:hover,
+input[type="number"]:focus
+	-moz-appearance: number-input
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button
+	-webkit-appearance: none
+	margin: 0
+
+
+// @import "_base/preloader"
+// @import "_base/animation"
+@import "_base/btn"
+@import "_base/form"
+@import "_base/modal"
+// @import "_base/hamburger"

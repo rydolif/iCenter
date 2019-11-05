@@ -1,0 +1,29 @@
+// font-weight helper:
+
+// 100 Extra Light or Ultra Light;
+// 200 Light or Thin; 300 Book or Demi;
+// 400 Regular or Normal;
+// 500 Medium;
+// 600 Semibold or Demibold;
+// 700 Bold;
+// 800 Black or Extra Bold or Heavy;
+// 900 Extra Black or Fat or Ultra Black
+
+
+@mixin font($f-name, $f-style, $f-weight, $f-url)
+	@font-face
+		font-family: $f-name
+		font-style: $f-style
+		font-weight: $f-weight
+		src: url($f-url) format('woff2')
+
+
+@include font('SFProDisplay', normal, 900, '../webfonts/SFProDisplay-Black.woff2')
+@include font('SFProDisplay', normal, 800, '../webfonts/SFProDisplay-Heavy.woff2')
+@include font('SFProDisplay', normal, 700, '../webfonts/SFProDisplay-Bold.woff2')
+@include font('SFProDisplay', normal, 600, '../webfonts/SFProDisplay-Semibold.woff2')
+@include font('SFProDisplay', normal, 500, '../webfonts/SFProDisplay-Medium.woff2')
+@include font('SFProDisplay', normal, 400, '../webfonts/SFProDisplay-Regular.woff2')
+@include font('SFProDisplay', normal, 300, '../webfonts/SFProDisplay-Light.woff2')
+@include font('SFProDisplay', normal, 200, '../webfonts/SFProDisplay-Thin.woff2')
+@include font('SFProDisplay', normal, 100, '../webfonts/SFProDisplay-Ultralight.woff2')
