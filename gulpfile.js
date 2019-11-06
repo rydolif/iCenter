@@ -52,7 +52,7 @@ gulp.task('minjs', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
 		// 'app/libs/jquery.validate.js', 					//----форма
-		// 'app/libs/jquery.mask.min.js', 					//----форма
+		'app/libs/jquery.mask.min.js', 					//----форма
 		'app/libs/jquery.popupoverlay.js', 				//----модалки
 		'app/libs/swiper/swiper.min.js', 				//----модалки
 		'app/js/common.js', // Always at the end
@@ -69,7 +69,7 @@ gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',  			//----jquery
 		// 'app/libs/jquery.validate.js', 					//----форма
-		// 'app/libs/jquery.mask.min.js', 					//----форма
+		'app/libs/jquery.mask.min.js', 					//----форма
 		'app/libs/jquery.popupoverlay.js', 				//----модалки
 		'app/libs/swiper/swiper.min.js', 				//----модалки
 		'app/js/common.js', // Always at the end

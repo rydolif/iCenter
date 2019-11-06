@@ -3,9 +3,24 @@
 		top: 15px
 		right: 15px
 
+
 @media only screen and (max-width : 1550px)
 	.tabs__item
-		padding-bottom: 35%
+		padding-bottom: 28%
+
+		img
+			display: block
+			margin: 0 auto
+			max-width: 86%
+
+		h2
+			font-size: 54px
+			line-height: 1.2
+			margin-bottom: 15px
+
+		p
+			margin-bottom: 15px
+			line-height: 1.2
 
 		br
 			display: none
@@ -13,9 +28,16 @@
 	.hero__logo
 		width: 180px
 
+
 @media only screen and (max-width : 1200px)
+	body
+		zoom: 100% !important
+
 	.hero
 		padding-bottom: 650px
+
+		&__bg
+			width: 120%
 
 		p
 			br
@@ -30,15 +52,14 @@
 
 		&__item
 			padding-top: 30px
+			padding-bottom: 32%
 
 		h2
-			font-size: 50px
-			line-height: 1.4
-			margin-bottom: 20px
+			font-size: 42px
+			line-height: 1.1
 
 		p
-			font-size: 24px
-			margin-bottom: 20px
+			font-size: 22px
 
 		a
 			font-size: 20px
@@ -142,7 +163,9 @@
 			justify-content: space-around
 
 		&__item
-			width: 49.5%
+			width: 48%
+			margin-bottom: 10px
+			padding-bottom: 41%
 
 	.slider
 		&__container
@@ -200,6 +223,9 @@
 			img
 				position: relative
 
+	.footer__logo
+		margin-bottom: 10px
+
 
 @media only screen and (max-width : 767px)
 	h2
@@ -236,8 +262,8 @@
 			font-weight: 400
 	
 	.tabs__item
-		padding-bottom: 50%
-	
+		padding-bottom: 42%
+
 	.slider,
 	.raffle,
 	.tabs,
@@ -273,6 +299,13 @@
 			max-width: 100%
 
 	.raffle
+		&__wrap
+			&::after
+				left: 50%
+
+			&::before
+				right: 50%
+
 		&__pagination
 			bottom: auto
 			top: -30px
@@ -299,9 +332,9 @@
 				margin-bottom: 15px
 
 			&_img
-				width: 100%
+				width: 80%
 				order: 1
-				margin-right: 0
+				margin: 0 auto
 
 		&__link
 			justify-content: center
@@ -365,7 +398,50 @@
 
 
 @media only screen and (max-width : 576px)
-	.access
+	input
+		height: 40px
+		line-height: 40px
+		padding: 0 10px
+
+		&::placeholder
+			line-height: 40px
+
+	.modal
+		padding: 20px
+
+		h3
+			font-size: 28px
+			margin-bottom: 25px
+
+		&__block
+			padding: 15px
+			margin-bottom: 20px
+
+			p
+				font-size: 24px
+
+			time
+				font-size: 20px
+				margin-bottom: 15px
+
+		&__line
+			margin-bottom: 15px
+
+		&--content
+			padding: 0
+
+			&__img
+				margin-bottom: 0
+
+			&__text
+				padding: 15px
+
+				p
+					font-size: 20px
+					margin-bottom: 15px
+
+				a
+					font-size: 24px
 
 
 @media only screen and (max-width : 480px)
@@ -375,7 +451,7 @@
 
 	.tabs__item
 		width: 100%
-		padding-bottom: 100%
+		padding-bottom: 90%
 		margin-bottom: 10px
 		
 		&:last-child
@@ -401,9 +477,12 @@
 				font-size: 20px
 
 
-	.raffle__link a
-		margin-right: 0
-		margin-bottom: 15px
+	.raffle
+		&__text_img
+			width: 100%
+		&__link a
+			margin-right: 0
+			margin-bottom: 15px
 			
 
 	.footer

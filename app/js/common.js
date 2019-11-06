@@ -16,9 +16,14 @@ $(function() {
 
 //-------------------------slider---------------------------------------
   var swiper = new Swiper('.slider__container', {
-    direction: 'vertical',
+    // direction: 'vertical',
     slidesPerView: 1,
-    mousewheel: true
+    mousewheel: true,
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
   });
 
 //-------------------------скорость якоря---------------------------------------
@@ -56,5 +61,9 @@ $(".click").on("click","a", function (event) {
      var selectTab = $(this).attr('href');
     $(selectTab).fadeIn();
   });
+
+//------------------------------------form-------------------------------------------
+  $('input[type="tel"]').mask('+0 (000) 000-00-00');
+
 
 });
