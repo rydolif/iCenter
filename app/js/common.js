@@ -5,6 +5,7 @@ $(function() {
     slidesPerView: 2,
     pagination: {
       el: '.raffle__pagination',
+      clickable: true,
     },
     breakpoints: {
       767: {
@@ -24,32 +25,22 @@ $(function() {
       delay: 5000,
       disableOnInteraction: false,
     },
+    pagination: {
+      el: '.slider__pagination',
+      clickable: true,
+    },
   });
 
 //-------------------------скорость якоря---------------------------------------
-$(".click").on("click","a", function (event) {
-    event.preventDefault();
-    var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top - 40}, 'slow', 'swing');
-});
+  // $(".click").on("click","a", function (event) {
+  //     event.preventDefault();
+  //     var id  = $(this).attr('href'),
+  //         top = $(id).offset().top;
+  //     $('html').animate({scrollTop: top - 0}, 'slow', 'swing');
+  // });
 
 //-------------------------------попандер---------------------------------------
   $('.modal').popup({transition: 'all 0.3s'});
-
-//---------------------------tabs-----------------------
-  $('.tabs__wrap').hide();
-  $('.tabs__wrap:first').show();
-  $('.tabs__list a:first').addClass('active');
-   $('.tabs__list a').click(function(event){
-    event.preventDefault();
-    $('.tabs__list a').removeClass('active');
-    $(this).addClass('active');
-    $('.tabs__wrap').hide();
-     var selectTab = $(this).attr('href');
-    $(selectTab).fadeIn();
-  });
-
 
 //---------------------------free-----------------------
   $('.free__wrap').hide();
