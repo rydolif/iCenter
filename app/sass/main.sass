@@ -2,19 +2,19 @@
 @import "base"
 
 .container
-	max-width: 1950px
+	max-width: 1280px
 	width: 100%
 	padding: 0 10px
 	margin: 0 auto
 
 	&--min
-		max-width: 1200px
+		max-width: 900px
 
 
 h1
-	font-size: 50px
+	font-size: 40px
 	line-height: 62px
-	margin-bottom: 70px
+	margin-bottom: 25px
 	color: #171717
 
 
@@ -22,40 +22,42 @@ h1
 	position: relative
 	text-align: center
 	padding:
-		top: 115px 
-		bottom: 805px
+		top: 35px 
+		bottom: 45px
 	z-index: 1
 
 	p
-		font-size: 30px
-		line-height: 49px
+		font-size: 22px
+		line-height: 1.7
 		color: #171717
 		font-weight: 400
-
+		margin-bottom: 45px
 
 	&__logo
-		position: absolute
-		top: 85px
-		right: 85px
+		margin-bottom: 58px
 
 	&__bg
-		position: absolute
-		bottom: 40px
-		left: 50%
-		transform: translate(-50%, 0)
-		z-index: -1
+		display: block
+		width: 84%
+		margin: 0 auto 20px
+
+	&__title
+		line-height: 1.7
+		font-size: 25px
+		font-weight: 700
 
 
 .tabs
-	padding-bottom: 100px
+	padding-bottom: 65px
 
 	&__container
 		padding: 0
 
 	h2
-		font-size: 60px
+		font-size: 33px
 		line-height: 72px
-		margin-bottom: 35px
+		margin-bottom: 15px
+		font-weight: 700
 
 	h3
 		font-size: 50px
@@ -64,12 +66,12 @@ h1
 		margin-bottom: 80px
 
 	p
-		font-size: 35px
+		font-size: 23px
 		margin-bottom: 34px
 
 	a
 		position: relative
-		font-size: 25px
+		font-size: 18px
 		color: #fff
 
 		&:hover,
@@ -86,7 +88,7 @@ h1
 
 	&__img
 		position: absolute
-		bottom: 0
+		bottom: 15px
 		right: 0
 		left: 0
 		z-index: -1
@@ -100,46 +102,48 @@ h1
 		position: relative
 		width: 32.5%
 		text-align: center
-		padding: 50px 20px 690px 20px
+		padding: 24px 20px 455px 20px
 		color: #fff
 		z-index: 1
 		overflow: hidden
 		
 		img
 			max-width: 100%
+			display: block
+			margin: 0 auto
 
 		&--red
 			background: linear-gradient(180deg, #D83F45 0%, #DF6A6F 109.72%)
 
 		&--blue
-			background: linear-gradient(0deg, #5496EB -4.49%, #256AC3 113.66%)
+			background: linear-gradient(0deg, #4093FF 0%, #1362C7 96.94%)
 
 		&--green
 			background: linear-gradient(1.97deg, #51C1D8 -1.92%, #18A2C6 100.38%)
 
 
 .slider
-	padding-bottom: 100px
+	padding-bottom: 70px
 
 	h2
-		font-size: 50px
-		line-height: 72px
+		font-size: 35px
+		line-height: 1.4
 		text-align: center
-		margin-bottom: 90px
+		margin-bottom: 58px
 		
 	h3
-		font-size: 45px
+		font-size: 35px
 		line-height: 1
-		margin-bottom: 50px
+		margin-bottom: 35px
 
 	h4
-		margin-bottom: 40px
+		margin-bottom: 25px
 		font-weight: 500
-		font-size: 35px
+		font-size: 25px
 
 	p
 		font-weight: 500
-		font-size: 25px
+		font-size: 18px
 
 	img
 		position: absolute
@@ -147,12 +151,12 @@ h1
 		right: 35px
 
 	&__container
-		height: 565px !important
+		height: 420px !important
 		
 	&__item
 		background: linear-gradient(203.2deg, #6FD4E9 6.66%, #39B8D7 94.24%)
 		color: #fff
-		padding: 120px 90px
+		padding: 100px 70px
 		overflow: hidden
 		
 		&--green
@@ -186,14 +190,13 @@ h1
 			transform: translate(0, 0)
 
 	h2
-		margin-bottom: 80px
-		font-size: 50px
+		margin-bottom: 60px
+		font-size: 35px
 		line-height: 1
 		text-align: center
 
 	&__wrap
 		position: relative
-		margin-bottom: 100px
 		overflow: inherit
 
 		&::before,
@@ -219,17 +222,18 @@ h1
 		width: 49%
 		padding:
 			top: 85px 
-			bottom: 160px
+			bottom: 55px
 
 		&:nth-child(2)
 			padding-left: 35px
 
 	&__item
 		position: relative
-		padding-left: 110px
-		margin-bottom: 110px
+		padding-left: 84px
+		margin-bottom: 75px
 		font-weight: 500
-		font-size: 35px
+		font-size: 25px
+		line-height: 1.6
 
 		&:hover,
 		&:focus
@@ -249,23 +253,15 @@ h1
 			position: absolute
 			top: 0
 			left: 0
+			transform: scale(.8)
 
 		a
-			font-size: 25px
+			display: block
+			padding-top: 30px
+			font-size: 19px
 			color: #526796
 			text-decoration: underline
 
-	&__text
-		display: flex
-		font-weight: 500
-		font-size: 30px
-		line-height: 52px
-
-		p
-			margin-bottom: 50px
-
-		&_img
-			margin-right: 15px
 
 	&__link
 		display: flex
@@ -280,79 +276,64 @@ h1
 
 
 .present
-	padding:
-		top: 170px
-		bottom: 50px
-	background-image: url(../img/present--bg.png)
-	background-position: center
-	background-repeat: no-repeat
-	background-size: cover
+	padding: 45px 0 35px
+	background: linear-gradient(180deg, #3084F0 0%, #3083F0 0.01%, #1969CF 98.96%)
 	color: #fff
+	text-align: center
 
 	h2
-		font-size: 50px
-		line-height: 64px
-		margin-bottom: 50px
-
-	ul
-		margin-bottom: 65px
-
-	li
-		position: relative
-		padding-left: 40px
+		font-size: 35px
 		margin-bottom: 30px
-		font-size: 30px
-		line-height: 36px
 
-		&:last-child
-			margin-bottom: 0
+	time, p
+		font-size: 23px
+
+	time
+		display: block
+		margin-bottom: 15px
+
+	p
+		margin-bottom: 47px
 
 	img
-		position: absolute
-		left: 0
-		top: 50%
-		transform: translate(0, -50%)
+		margin-right: 15px
 
 	a
-		position: relative
-		font-weight: 500
 		font-size: 20px
+		font-weight: 500
 		color: #fff
 
 		&:hover,
 		&:focus
-			img
-				right: -45px
-			
+			color: #fff
+
 		img
-			position: absolute
-			top: 60%
-			right: -35px
-			left: auto
-			transform: translate(0, -50%)
-			transition: all .6s
+			margin-right: 0
+			margin-left: 15px
+			width: 15px
 
 
 .free
 	padding: 
-		top: 100px
-		bottom: 110px
+		top: 70px
+		bottom: 83px
 	background: #F2F6FF
 
 	h2
 		text-align: center
-		font-size: 47px
-		line-height: 78px
-		margin-bottom: 105px
+		font-size: 35px
+		line-height: 1.4
+		margin-bottom: 70px
 
 	h3
-		font-size: 45px
+		font-size: 35px
 		line-height: 1.5
-		margin-bottom: 50px
+		margin-bottom: 15px
 
 	p
-		font-size: 28px
-		margin-bottom: 45px
+		font-size: 21px
+		margin-bottom: 25px
+		line-height: 1.5
 
 		a
 			color: #E0444A
@@ -366,12 +347,19 @@ h1
 		display: flex
 		align-items: center
 		line-height: 1
-		font-size: 25px
+		font-size: 18px
 		color: #B7C1D8
-		margin-bottom: 45px
+		margin-bottom: 35px
 
 		img
-			margin-right: 15px
+			margin-right: 10px
+			width: 20px
+
+	&__sub-title
+		font-weight: 700
+		text-align: center
+		font-size: 20px !important
+		margin-bottom: 40px !important
 	
 	&__wrap
 		display: flex
@@ -379,7 +367,7 @@ h1
 		background: #FFFFFF
 		border-radius: 10px
 		overflow: hidden
-		margin-bottom: 55px
+		margin-bottom: 30px
 
 		a
 			position: relative
@@ -397,8 +385,7 @@ h1
 				transform: translate(0, -50%)
 				transition: all .6s
 				width: 10px
-
-		
+	
 	&__content,
 	&__img
 		width: 50%
@@ -406,7 +393,7 @@ h1
 	&__img
 		position: relative
 		overflow: hidden
-		
+		background: #E1E7F6
 
 		img
 			position: absolute
@@ -416,7 +403,7 @@ h1
 			min-width: 100%
 
 	&__content
-		padding: 50px 35px 50px 45px
+		padding: 55px 25px 50px 25px
 
 	&__link
 		color: #526796
@@ -429,7 +416,6 @@ h1
 
 	&__list
 		position: relative
-		padding-top: 85px
 		display: flex
 		justify-content: space-between
 		z-index: 1
@@ -452,27 +438,28 @@ h1
 			margin-bottom: 0
 			font-weight: 300
 			color: #fff
-			font-size: 18px
+			font-size: 14px
 			margin-right: 15px
+			margin-bottom: 5px
 
 		img
-			width: 15px
-			margin-right: 5px !important
+			width: 13px !important
+			margin-right: 8px !important
 
 
 		&_link
 
 			a
 				display: block
-				width: 60px
-				height: 60px
+				width: 45px
+				height: 45px
 				border-radius: 50%
 				background-color: #fff
 				border: 1px solid #CFDFFF
 				text-align: center
-				line-height: 60px
+				line-height: 45px
 				color: #526796
-				font-size: 19px
+				font-size: 14px
 				font-weight: 700
 				transition: all .6s
 
@@ -481,12 +468,12 @@ h1
 				span
 					opacity: 1
 					z-index: 1
-
+			
 			span
 				position: absolute
-				top: 0
+				top: -80px
 				display: flex
-				align-items: center
+				flex-direction: column
 				margin-left: -32px
 				background-color: #5E8EF5
 				padding: 10px 15px
@@ -514,8 +501,8 @@ h1
 					color: #fff
 					border: none
 					width: auto
-					height: 40px
-					line-height: 40px
+					height: 30px
+					line-height: 30px
 					padding: 0 30px
 					font-weight: 400
 					transition: all .7s
@@ -523,8 +510,18 @@ h1
 					&:hover,
 					&:focus
 						box-shadow: 0 0 10px 0 rgba(#3B6EDA, 1)
+			
+			p
+				font-size: 16px
+				margin-bottom: 0
+				margin-right: 10px
+
+			div
+				display: flex
+				align-items: flex-end
 
 		&_off
+
 			a
 				background: #E0444A
 				border: 1px solid #E0444A
@@ -536,7 +533,7 @@ h1
 
 			span
 				position: absolute
-				top: 0
+				top: -80px
 				display: block
 				margin-left: -32px
 				background-color: #E0444A
@@ -560,6 +557,7 @@ h1
 
 		&_on
 			position: relative
+
 			a
 				background: #DCE7FF
 				border: 1px solid #DCE7FF
@@ -571,20 +569,24 @@ h1
 
 			img
 				position: absolute
-				width: 21px
-				bottom: -45px
+				width: 16px
+				bottom: -35px
 				left: 50%
 				transform: translate(-50%, 0)
 
 
 .footer
-	padding: 40px 0
+	padding: 22px 0
 	color: #1E1E1E
 	background-color: #fff
 
 
 	p
 		font-size: 16px
+		margin-bottom: 10px
+
+		&:last-child
+			margin-bottom: 0
 
 		img
 			margin-right: 8px
@@ -604,10 +606,9 @@ h1
 	&__container
 		display: flex
 		justify-content: space-between
-		align-items: center
 	
 	&__logo
-		width: 120px
+		width: 100px
 
 		img
 			width: 100%
@@ -615,7 +616,6 @@ h1
 	&__soc
 		display: flex
 		justify-content: space-between
-		align-items: center
 
 		a
 			position: relative
@@ -643,6 +643,32 @@ h1
 			transform: translate(-50%, -50%)
 			transition: all .6s
 
+
+.up
+	position: fixed
+	bottom: -100px
+	right: 50px
+	width: 60px
+	height: 60px
+	border-radius: 50%
+	background-color: #fff
+	box-shadow: 0 0 7px 0 rgba(#000, .4)
+	transition: all .6s
+	z-index: 100
+
+	&--active
+		bottom: 50px
+
+	span
+		position: absolute
+		top: 55%
+		left: 50%
+		transform: translate(-50%, -50%) rotate(45deg)
+		display: block
+		width: 20px
+		height: 20px
+		border-top: 5px solid #e0444a
+		border-left: 5px solid #e0444a
 
 
 @import "media" // Always at the end
