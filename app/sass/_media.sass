@@ -1,52 +1,42 @@
-// @media only screen and (max-width : 1700px)
-// 	.hero__logo
-// 		top: 15px
-// 		right: 15px
-
-
-// @media only screen and (max-width : 1550px)
-// 	.tabs__item
-// 		padding-bottom: 28%
-
-// 		img
-// 			display: block
-// 			margin: 0 auto
-// 			max-width: 86%
-
-// 		h2
-// 			font-size: 54px
-// 			line-height: 1.2
-// 			margin-bottom: 15px
-
-// 		p
-// 			margin-bottom: 15px
-// 			line-height: 1.2
-
-// 		br
-// 			display: none
-
-// 	.hero__logo
-// 		width: 180px
-
 
 @media only screen and (max-width : 1200px)
-	body
-		zoom: 100% !important
+	.container
+		max-width: 992px
+
+		&--min
+			max-width: 740px
+
+	h2
+		font-size: 28px !important
+		line-height: 1.4 !important
+		margin-bottom: 30px !important
+
+		br
+			display: none
 
 	.hero
-		padding-bottom: 650px
+		&__logo
+			margin-bottom: 30px
+			width: 200px
 
-		&__bg
-			width: 120%
+		h1
+			font-size: 30px
+			line-height: 1.6
+
 
 		p
+			font-size: 18px
+			margin-bottom: 30px
+
 			br
 				display: none
 
-	h1
-		margin-bottom: 40px
+		&__bg
+			margin-bottom: 0
 
-	
+		&__title
+			font-size: 20px
+
 	.tabs
 		padding-bottom: 40px
 
@@ -54,23 +44,19 @@
 			padding-top: 30px
 			padding-bottom: 32%
 
-		h2
-			font-size: 42px
-			line-height: 1.1
-
 		p
-			font-size: 22px
+			font-size: 18px
+			margin-bottom: 25px
 
 		a
-			font-size: 20px
+			font-size: 18px
+
+		&__img
+			bottom: 0
+			max-height: 320px
 
 	.slider
 		padding-bottom: 60px
-
-		h2
-			font-size: 42px
-			line-height: 1.4
-			margin-bottom: 40px
 
 		&__container
 			height: 400px !important
@@ -84,19 +70,11 @@
 			max-width: 40%
 	
 	.raffle
-		h2
-			font-size: 42px
-			line-height: 1.4
-			margin-bottom: 40px
-
-		&__wrap
-			margin-bottom: 70px
-
 		&__list
-			padding: 70px 0
+			padding-top: 40px
 
 		&__item
-			font-size: 28px
+			font-size: 22px
 			margin-bottom: 40px
 	
 		&__text
@@ -121,26 +99,18 @@
 		&__link
 			width: 100% !important
 
-	.present
-		h2
-			font-size: 42px
-			line-height: 1.4
-			margin-bottom: 40px
+	.present p
+		margin-bottom: 20px
 
 	.free
 		padding: 40px 0 80px
 
-		h2
-			font-size: 42px
-			line-height: 1.4
-			margin-bottom: 40px
-
-			br
-				display: none
-
 		h3
-			font-size: 36px
+			font-size: 26px
 			margin-bottom: 20px
+
+		p, a
+			font-size: 18px
 
 		time
 			margin-bottom: 20px
@@ -158,6 +128,15 @@
 
 
 @media only screen and (max-width : 992px)
+	.container
+		max-width: 767px
+
+		&--min
+			max-width: 640px
+
+	.hero
+		padding: 30px 0
+
 	.tabs
 		&__list
 			justify-content: space-around
@@ -168,8 +147,10 @@
 			padding-bottom: 41%
 
 	.slider
+		padding-bottom: 40px
+
 		&__container
-			height: 350px !important
+			height: 320px !important
 
 		&__item
 			padding: 30px
@@ -178,17 +159,12 @@
 				max-width: 35%
 
 		h3
-			font-size: 38px
-			margin-bottom: 30px
+			font-size: 28px
 
 		h4
-			font-size: 32px
-			margin-bottom: 30px
+			font-size: 24px
 	
 	.raffle
-		&__wrap
-			margin-bottom: 40px
-
 		&__list
 			padding: 40px 0
 
@@ -197,18 +173,24 @@
 
 		&__item
 			padding-left: 85px
-			font-size: 22px
+			font-size: 18px
+
+			a
+				font-size: 16px
 
 
 		&__text_img
 			margin-right: 2%
 
-	.present
-		padding-top: 70px
-
 	.free
 		p
 			margin-bottom: 20px
+
+			br
+				display: none
+
+		a, p
+			font-size: 16px
 
 		&__content, 
 		&__img
@@ -222,6 +204,11 @@
 
 			img
 				position: relative
+
+		&__wrap
+			width: 80%
+			margin: 0 auto 30px
+
 
 	.footer__logo
 		margin-bottom: 10px
@@ -240,69 +227,72 @@
 			width: 20px
 			height: 20px
 
+	h1
+		font-size: 28px
+		line-height: 1.4 !important
+
 	h2
+		font-size: 25px !important
+
 		br
 			display: none
 
 	.hero
-		padding-bottom: 50px
-		padding-top: 170px
+		p
+			font-size: 16px
+
+			br
+				display: none
+
+		&__title
+			font-size: 18px
+
+			br
+				display: none
+
+		&__logo
+			margin: 0 auto 20px
+			width: 160px
 
 		&__container
 			display: flex
 			flex-direction: column
 			text-align: center
 
-
-		&__logo
-			right: 0
-			left: 0
-			margin: 0 auto
-
-		h1
-			font-size: 35px
-			line-height: 1.2
-
 		&__bg
-			position: relative
-			width: 1170px
-			bottom: 0
 
-		p
-			font-size: 24px
-			text-shadow: 0
-			font-weight: 400
-	
-	.tabs__item
-		padding-bottom: 42%
 
-	.slider,
-	.raffle,
-	.tabs,
-	.present,
-	.free
+	.tabs
 		h2
-			font-size: 35px
-			line-height: 1.4
+			margin-bottom: 15px !important
+
+		&__container
+			padding: 0 15px
+
+		&__item
+			width: 100%
+			padding: 15px
+
+		&__img
+			position: relative
 
 	.slider
 		&__container
-			height: 650px !important
+			height: 550px !important
 			
 		&__item
 			text-align: center
 			padding: 30px 15px
 
 		h3
-			font-size: 35px
-			margin-bottom: 25px
+			font-size: 24px
+			margin-bottom: 15px
 
 		h4
-			font-size: 25px
-			margin-bottom: 25px
+			margin-bottom: 15px
 
 		p
-			font-size: 17px
+			font-size: 16px
 
 		img
 			position: relative
@@ -312,28 +302,47 @@
 
 	.raffle
 		&__wrap
-			&::after
-				left: 50%
-
+			margin: 0 -15px
+			&::after,
 			&::before
-				right: 50%
+				display: none
 
 		&__pagination
 			bottom: auto
 			top: -30px
 
-		&__list:nth-child(2)
-			padding-left: 0
+		&__list
+			width: 100%
+			padding: 20px 15px
+			margin-bottom: 20px
+			background: #F5F8FF
+
+			&:nth-child(2)
+				margin-bottom: 0
 
 		&__item
 			padding-left: 0
 			text-align: center
 			font-size: 20px
+			margin-bottom: 20px
+
+			&--link
+				display: none
+
+			br
+				display: none
 
 			img
 				display: block
 				position: relative
 				margin: 0 auto
+
+		&__link
+			display: block
+			a
+				font-size: 20px
+				padding: 20px 15px !important
+				font-weight: 400
 
 		&__text
 			font-size: 20px
@@ -353,22 +362,12 @@
 			justify-content: center
 			flex-wrap: wrap
 
-		&__pagination
-			display: block
-
 	.present
-		
+		padding: 30px 0
 
-		h2
-			margin-bottom: 25px
-			width: 70%
+		p, time
+			font-size: 18px
 
-		ul
-			margin-bottom: 25px
-
-		li
-			font-size: 20px
-			margin-bottom: 20px
 
 	.free
 		padding-bottom: 40px
@@ -377,11 +376,7 @@
 			margin-bottom: 5px
 
 		h3
-			font-size: 28px
-			line-height: 1.4
-
-		p, time
-			font-size: 20px
+			font-size: 24px
 
 		&__container
 			display: flex
@@ -389,15 +384,15 @@
 
 		&__wrap
 			order: 1
+			margin-bottom: 0
 
 		&__list
 			position: relative
 			overflow-x: auto
 			padding-bottom: 60px
 
-			&::before
-				bottom: 90px
-				width: 300%
+			&_before
+				bottom: 80px
 
 			&_link
 				margin-right: 40px
@@ -455,28 +450,56 @@
 
 				a
 					font-size: 24px
+	
+	.hero__bg
+		width: 100%
+
+	.footer
+		text-align: center
+
+		&__container
+			flex-direction: column
+			align-items: center
+
+		&__logo
+			margin-bottom: 10px
+
+		p
+			margin-bottom: 10px !important
 
 
 @media only screen and (max-width : 480px)
+	h1
+		font-size: 26px !important
+		margin-bottom: 15px
+
+		br
+			display: none
+
+	h2
+		font-size: 22px !important
+		margin-bottom: 15px !important
+
 	.hero
 		&__logo
 			width: 170px
 
-	.tabs__item
-		width: 100%
-		padding-bottom: 90%
-		margin-bottom: 10px
-		
-		&:last-child
-			margin-bottom: 0
+		p
+			line-height: 1.4
+
+		&__title
+			line-height: 1.4
+
 
 	.present
-		padding-top: 40px
-		padding-bottom: 100%
-		background-image: url(../img/present--mob.png)
 
 		a
 			font-size: 18px
+
+	.slider__item
+		display: flex
+		flex-direction: column
+		justify-content: space-around
 
 	.free
 		&__img img
@@ -486,17 +509,14 @@
 			padding: 10px
 
 		&__wrap
+			width: 100%
+
 			a
 				font-size: 20px
 
+		&__list
+			padding-bottom: 75px
 
-	.raffle
-		&__text_img
-			width: 100%
-		&__link a
-			margin-right: 0
-			margin-bottom: 15px
-			
 
 	.footer
 		padding: 30px 0
