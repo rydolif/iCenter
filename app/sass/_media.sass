@@ -137,6 +137,10 @@
 	.hero
 		padding: 30px 0
 
+		&__title
+			br
+				display: none
+
 	.tabs
 		&__list
 			justify-content: space-around
@@ -155,8 +159,6 @@
 		&__item
 			padding: 30px
 
-			img
-				max-width: 35%
 
 		h3
 			font-size: 28px
@@ -298,7 +300,9 @@
 			position: relative
 			top: 0
 			right: 0
-			max-width: 100%
+			min-width: 65%
+			display: block
+			margin: 0 auto
 
 	.raffle
 		&__wrap
@@ -386,19 +390,26 @@
 			order: 1
 			margin-bottom: 0
 
+		&__sub-title
+			margin-bottom: 0 !important
+
 		&__list
 			position: relative
 			overflow-x: auto
-			padding-bottom: 60px
+			padding: 80px 0 40px
 
 			&_before
-				bottom: 80px
+				bottom: 60px
 
 			&_link
 				margin-right: 40px
 
+				p, time
+					margin-bottom: 0 !important
+
 				span
 					flex-wrap: wrap
+					top: 0
 
 				time
 					font-size: 16px
@@ -513,10 +524,6 @@
 
 			a
 				font-size: 20px
-
-		&__list
-			padding-bottom: 75px
-
 
 	.footer
 		padding: 30px 0

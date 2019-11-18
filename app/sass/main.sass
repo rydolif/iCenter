@@ -110,15 +110,17 @@ h1
 			max-width: 100%
 			display: block
 			margin: 0 auto
+			max-height: 60%
+			max-width: 90%
 
 		&--red
-			background: linear-gradient(180deg, #D83F45 0%, #DF6A6F 109.72%)
+			background: linear-gradient(180deg, #C72927 0%, #F14939 100%)
 
 		&--blue
 			background: linear-gradient(0deg, #4093FF 0%, #1362C7 96.94%)
 
 		&--green
-			background: linear-gradient(1.97deg, #51C1D8 -1.92%, #18A2C6 100.38%)
+			background: linear-gradient(1.97deg, #1BCAEE -1.92%, #07A8D1 100.38%)
 
 
 .slider
@@ -151,25 +153,28 @@ h1
 		height: 420px !important
 		
 	&__item
-		background: linear-gradient(203.2deg, #6FD4E9 6.66%, #39B8D7 94.24%)
+		background: linear-gradient(200.86deg, #19C7EC 1.92%, #08ABD3 84.09%)
 		color: #fff
 		padding: 100px 70px
 		overflow: hidden
+
+		img
+			max-height: 80%
 		
 		&--green
-			background: linear-gradient(5.51deg, #97C048 8.38%, #A8CB64 90.83%)
+			background: linear-gradient(5.49deg, #8CB937 8.38%, #A8D255 90.83%)
 
 		&--yellow
-			background: linear-gradient(5.51deg, #E6A530 8.38%, #E8BC44 90.83%)
+			background: linear-gradient(5.49deg, #E9A01C 8.81%, #ECB726 90.83%)
 
 		&--orange
-			background: linear-gradient(5.51deg, #E87D30 8.38%, #ED995D 90.83%)
+			background: linear-gradient(5.49deg, #E37221 12.68%, #F48B40 90.83%)
 
 		&--red
-			background: linear-gradient(5.51deg, #D84046 8.38%, #DE6569 90.83%)
+			background: linear-gradient(5.49deg, #C82A27 8.38%, #EF4838 90.83%)
 
 		&--blue
-			background: linear-gradient(5.51deg, #377BD2 8.38%, #639DE7 90.83%)
+			background: linear-gradient(5.49deg, #1564CA 8.38%, #3387F4 90.83%)
 
 
 .raffle
@@ -178,12 +183,8 @@ h1
 		margin-bottom: 60px
 		line-height: 1
 
-	&__link
-		display: none
-		
 	&__pagination
 		display: none
-
 
 	@keyframes hover
 		0%
@@ -192,7 +193,6 @@ h1
 			transform: translate(0, -30px)
 		100%
 			transform: translate(0, 0)
-
 
 	&__wrap
 		position: relative
@@ -264,18 +264,9 @@ h1
 			color: #526796
 			text-decoration: underline
 
-
 	&__link
-		display: flex
-		flex-wrap: wrap
-
-		a
-			display: block
-			margin-right: 15px
-
-			&:last-child
-				margin-right: 0
-
+		display: none
+		
 
 .present
 	padding: 45px 0 35px
@@ -407,7 +398,7 @@ h1
 			top: 50%
 			left: 50%
 			transform: translate(-50%, -50%)
-			min-width: 100%
+			width: 100%
 
 	&__content
 		padding: 55px 25px 50px 25px
