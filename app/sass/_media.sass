@@ -217,6 +217,8 @@
 
 
 @media only screen and (max-width : 767px)
+
+
 	.up
 		width: 50px
 		height: 50px
@@ -280,7 +282,7 @@
 
 	.slider
 		&__container
-			height: 550px !important
+			height: 450px !important
 			
 		&__item
 			text-align: center
@@ -300,10 +302,13 @@
 			position: relative
 			top: 0
 			right: 0
-			min-width: 65%
+			max-width: 85%
 			display: block
 			margin: 0 auto
-
+			max-width: inherit
+			max-height: 260px
+			min-width: inherit
+	
 	.raffle
 		&__wrap
 			margin: 0 -15px
@@ -409,7 +414,8 @@
 
 				span
 					flex-wrap: wrap
-					top: 0
+					top: auto
+					bottom: 40px
 
 				time
 					font-size: 16px
@@ -482,7 +488,7 @@
 @media only screen and (max-width : 480px)
 	h1
 		font-size: 26px !important
-		margin-bottom: 15px
+		margin-bottom: 0
 
 		br
 			display: none
@@ -500,6 +506,15 @@
 
 		&__title
 			line-height: 1.4
+
+		&__bg
+			width: 120%
+			margin: 0 -10% 10px
+
+	.tabs__item
+		&:last-child
+			img
+				max-width: 70%
 
 
 	.present
